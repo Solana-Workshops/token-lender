@@ -5,7 +5,7 @@ use std::str::FromStr;
 
 use crate::state::LoanEscrow;
 
-pub const SOL_USD_PRICE_FEED_ID: &str = "ALP8SdU9oARYVLgLR7LrqMNCYBnhtnQz1cj6bwgwQmgj";
+pub const SOL_USD_PRICE_FEED_ID: &str = "H6ARHf6YXhGYeQfUzQNGk6rDNnLBQKrenN712K4AQJEG";
 
 pub fn to_pubkey(string: &str) -> Pubkey {
     Pubkey::from_str(string).expect("Error parsing public key from string.")

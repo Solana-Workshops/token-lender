@@ -1,26 +1,27 @@
 {
-    "scripts": {
-        "lint:fix": "prettier */*.js \"*/**/*{.js,.ts}\" -w",
-        "lint": "prettier */*.js \"*/**/*{.js,.ts}\" --check",
-        "upload-json": "ts-node scripts/upload-json.ts"
-    },
-    "dependencies": {
-        "@coral-xyz/anchor": "^0.27.0",
-        "@metaplex-foundation/js": "^0.19.2",
-        "@metaplex-foundation/mpl-token-metadata": "^2.11.0",
-        "@pythnetwork/client": "^2.17.0",
-        "@solana/spl-token": "^0.3.7"
-    },
-    "devDependencies": {
-        "@types/bn.js": "^5.1.0",
-        "@types/chai": "^4.3.0",
-        "@types/mocha": "^9.0.0",
-        "chai": "^4.3.4",
-        "fs": "^0.0.1-security",
-        "mocha": "^9.0.3",
-        "prettier": "^2.6.2",
-        "ts-mocha": "^10.0.0",
-        "ts-node": "^10.9.1",
-        "typescript": "^4.3.5"
-    }
+  "scripts": {
+    "lint:fix": "prettier */*.js \"*/**/*{.js,.ts}\" -w",
+    "lint": "prettier */*.js \"*/**/*{.js,.ts}\" --check",
+    "upload-json": "ts-node scripts/upload-json.ts"
+  },
+  "dependencies": {
+    "@coral-xyz/anchor": "0.27.0",
+    "@metaplex-foundation/amman": "^0.12.1",
+    "@metaplex-foundation/js": "^0.19.2",
+    "@metaplex-foundation/mpl-token-metadata": "^2.11.0",
+    "@pythnetwork/client": "^2.17.0",
+    "@solana/spl-token": "^0.3.7"
+  },
+  "devDependencies": {
+    "@types/bn.js": "^5.1.0",
+    "@types/chai": "^4.3.0",
+    "@types/mocha": "^9.0.0",
+    "chai": "^4.3.4",
+    "fs": "^0.0.1-security",
+    "mocha": "^9.0.3",
+    "prettier": "^2.6.2",
+    "ts-mocha": "^10.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.3.5"
+  }
 }
