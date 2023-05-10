@@ -7,7 +7,7 @@ use anchor_lang::prelude::*;
 
 use instructions::*;
 
-declare_id!("32xQJkxLJNmWPtykFuBpdXrh7SxMpRwSkYUWY3Fa9cim");
+declare_id!("HpWZVuGi4UqTKp1rwSeYdp3oc2jWJ4yxKRnu6HbficsQ");
 
 #[program]
 mod token_lender {

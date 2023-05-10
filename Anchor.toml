@@ -1,14 +1,21 @@
 [features]
 seeds = false
 [programs.localnet]
-token_lender = "32xQJkxLJNmWPtykFuBpdXrh7SxMpRwSkYUWY3Fa9cim"
+token_lender = "HpWZVuGi4UqTKp1rwSeYdp3oc2jWJ4yxKRnu6HbficsQ"
+
+[programs.devnet]
+token_lender = "FMuw4UzbPXHuzcHfeMvUhFcq7rAmb8Qrd1NF37i61QQb"
 
 [registry]
 url = "https://anchor.projectserum.com"
 
 [provider]
 cluster = "localnet"
-wallet = "/Users/joesol/.config/solana/id.json"
+wallet = "~/.config/solana/id.json"
+
+
+
+
 
 [test.validator]
 url = "https://api.mainnet-beta.solana.com"
@@ -31,6 +38,6 @@ address = "8GWTTbNiXdmyZREXbjsZBmCRuzdPrW55dnZGDkTRjWvb"
 
 
 [scripts]
-test = "yarn run upload-json"
-# test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/token-lender.ts"
-# pyth = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/pyth.ts"
+metadata = "yarn run upload-json"
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/token-lender.ts"
+pyth = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/pyth.ts"

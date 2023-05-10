@@ -1,10 +1,10 @@
 import { PublicKey } from '@solana/web3.js';
 
 export const SOL_USD_PRICE_FEED_ID = new PublicKey(
-    'J83w4HKfqxwcq3BEMMkPFSppX3gqekLyLJBexebFVkix',
+    'ALP8SdU9oARYVLgLR7LrqMNCYBnhtnQz1cj6bwgwQmgj',
 );
 export const USDC_MINT = new PublicKey(
-    '79MBKfDRce7r2cUMiidckfSZ2SAG14fa75GosYxtcwg8',
+    '4zMMC9srt5Ri5X14GAgXhaHii3GnPAEERYPJgZJDncDU',
 );
 
 export const LOAN_ESCROW_SEED_PREFIX = 'loan_escrow';

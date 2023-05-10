@@ -1,20 +1,12 @@
 import { PROGRAM_ID as METADATA_PROGRAM_ID } from "@metaplex-foundation/mpl-token-metadata";
-import {
-  Idl,
-  IdlTypes,
-  Program,
-  utils as anchorUtil,
-} from "@project-serum/anchor";
+import { Idl, IdlTypes, Program, utils as anchorUtil } from "@coral-xyz/anchor";
 import { getAccount } from "@solana/spl-token";
 import { Keypair, PublicKey } from "@solana/web3.js";
 import { assert } from "chai";
 import { TokenLender } from "../target/types/token_lender";
 
 export const SOL_USD_PRICE_FEED_ID = new PublicKey(
-  "ALP8SdU9oARYVLgLR7LrqMNCYBnhtnQz1cj6bwgwQmgj"
-);
-export const USDC_MINT = new PublicKey(
-  "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+  "H6ARHf6YXhGYeQfUzQNGk6rDNnLBQKrenN712K4AQJEG"
 );
 
 export const LOAN_ESCROW_SEED_PREFIX = "loan_escrow";
@@ -112,6 +104,7 @@ export async function assertLoanAccepted(
   );
 }
 
+/*
 export async function assertLoanClosed(
   program: Program<TokenLender>,
   loanEscrowPublicKey: PublicKey
@@ -138,6 +131,7 @@ export async function assertLoanClosed(
   );
 }
 
+
 export async function assertPrincipleReturnedToLoan(
   program: Program<TokenLender>,
   loanEscrowPublicKey: PublicKey
@@ -159,3 +153,4 @@ export async function assertPrincipleReturnedToLoan(
     "USDC balance was not equal to deposit."
   );
 }
+*/
